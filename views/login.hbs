@@ -1,0 +1,15 @@
+{{#if message.error}}
+<h1>There is error for {{message.error}}</h1>
+{{else}}
+<form action="/login" method="post">
+    <div style="height: 500px;width:600px;background:black;color:white;padding:30px;margin-left:20%;border-radius:20px">
+        <h3>Login page</h3>
+        <label for="Email" style="width: 100%;margin-bottom:20px">Email</label><br>
+        <input type="text"  style="width: 90%;margin-bottom:20px;height:30px" placeholder="email" name="email">
+        <label  style="width: 100%;margin-bottom:20px" for="Password">Password</label>
+        <input  style="width: 90%;margin-bottom:20px;height:30px" placeholder="password" type="password" name="password">
+        <button type="submit" style="background-color: red;color:white;height:60px;width:200px;border-radius: 20px;border:none">Login</button>
+    </div>
+
+</form>
+{{/if}}
